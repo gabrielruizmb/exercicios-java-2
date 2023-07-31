@@ -12,9 +12,12 @@ public class Main {
         enderecos001.add(endereco002);
         Pessoa pessoa001 = new Pessoa("Alice", enderecos001);
 
-        System.out.printf(pessoa001.getNome() + "\n");
+        List<Pessoa> pessoas = new ArrayList<>();
+        pessoas.add(pessoa001);
 
-        for (Endereco endereco : enderecos001) {
+        System.out.printf(pessoas.get(0).getNome() + "\n");
+
+        for (Endereco endereco : pessoas.get(0).getEndereco()) {
             System.out.printf(endereco.getRua() + " " + endereco.getNumero() + "\n");
         }
     }
