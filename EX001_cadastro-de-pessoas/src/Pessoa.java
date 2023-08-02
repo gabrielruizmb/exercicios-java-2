@@ -2,6 +2,7 @@ import java.util.List;
 
 public class Pessoa {
     private String nome;
+    private int idade;
     private List<Endereco> endereco;
 
     public Pessoa(String nome, List<Endereco> endereco) {
